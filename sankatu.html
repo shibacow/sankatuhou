@@ -22,19 +22,26 @@
 
 
 
-<meta name="_csrf" content="8a41bfbc-3346-487c-954a-c8a72f0696e5"/>
+<meta name="_csrf" content="1d6e2b40-1d11-4d48-a9dd-70b503bf7845"/>
 
 <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
 
 
 <meta name="description" content="電子政府の総合窓口（e-Gov）。法令（憲法・法律・政令・勅令・府令・省令・規則）の内容を検索して提供します。">
 <meta name="keywords" content="電子政府,e-Gov,法令,憲法,法律,政令,勅令,府令,省令,規則,検索">
+
+<!-- CSS  -->
 <link media="screen, print" href="/search/elawsSearch/EGOV/css/import.css" type="text/css" rel="stylesheet">
 <link media="print" href="/search/elawsSearch/EGOV/css/print.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/search/elawsSearch/EGOV/css/style.css" media="screen, print">
+<!-- CSS  -->
 
+<!-- JS  -->
+<script type="text/javascript" src="/search/elawsSearch/EGOV/js/script.js"></script>
 <script type="text/javascript" src="/search/elawsSearch/js/jquery-1.11.2.min.js"></script>
+<!-- JS  -->
 
-<!-- JS Common --><script type="text/javascript" src="/search/elawsSearch/EGOV/js/common.js" charset="UTF-8"></script>
+
 
 <!-- <link rel="stylesheet" type="text/css" href="/search/elawsSearch/css/bootstrap.min.css" /> -->
 <link rel="stylesheet" type="text/css" href="/search/elawsSearch/css/bootstrap.css" />
@@ -99,39 +106,46 @@ $(function() {
 
 
 
+<meta name="viewport" content="width=1141">
 
 	<noscript class="jsAlert">このサイトではJavascript機能をOnにしてご利用ください。</noscript>
 <div class="blockskip"><a href="#cntBlock">ページの本文へ</a></div>
 
 <a name="top" id="top"><!-- top of page --></a>
-<meta name="viewport" content="width=1141">
 
-<!--=========== #header ===========-->
-<div id="header" class="clearfix">
-	<div class="inner">
-		<p class="logo"><a href="http://www.e-gov.go.jp/index.html"><img src="/search/elawsSearch/EGOV/images/head_logo.jpg" width="116" height="67" alt="電子政府の総合窓口 e-Gov［イーガブ］"></a></p>
-		<ul class="head_menu">
-			<li class="menu_contact"><a href="http://www.e-gov.go.jp/contact/index.html">お問合せ</a></li>
-			<li class="menu_sitemap"><a href="http://www.e-gov.go.jp/sitemap.html">サイトマップ</a></li>
-		</ul>
+<!--=========== header ===========-->
+<header>
+	<p class="logo"><a href="http://www.e-gov.go.jp/"><img src="/search/elawsSearch/EGOV/images/header-logo.png" alt="電子政府の総合窓口 e-Gov[イーガブ]" width="446" height="80"></a></p>
+	<div class="navButton"><span></span></div>
+	<div class="navGroup">
+		<div class="headMenu">
+			<ul>
+				<li><a href="http://elaws.e-gov.go.jp/search/html/readme.html" target="_blank">ヘルプ<i class="icon"><img src="/search/elawsSearch/EGOV/images/icon-popup.png" alt="新規ウィンドウが開きます" width="26" height="26"></i></a></li>
+				<li><a href="http://www.e-gov.go.jp/contact/">お問合せ</a></li>
+				<li><a href="http://www.e-gov.go.jp/sitemap.html">サイトマップ</a></li>
+				<li><a href="http://www.e-gov.go.jp/en/">English</a></li>
+				<li class="sns"><a href="https://twitter.com/eGovJapan" target="_blank"><img src="/search/elawsSearch/EGOV/images/icon-sns-twitter.png" alt="Twitter @eGovJapan" width="60" height="60"></a></li>
+			</ul>
+		</div>
+		<nav class="globalNav">
+			<ul>
+				<li><a href="http://www.e-gov.go.jp/application/">申請・届出</a></li>
+				<li class="current"><a href="http://www.e-gov.go.jp/law/">法令</a></li>
+				<li><a href="http://www.e-gov.go.jp/publiccomment/">パブリックコメント</a></li>
+				<li><a href="http://www.e-gov.go.jp/document/">文書管理</a></li>
+				<li><a href="http://www.e-gov.go.jp/individual/">個人情報保護</a></li>
+				<li><a href="http://www.e-gov.go.jp/budget/">予算・決算</a></li>
+				<li><a href="http://www.e-gov.go.jp/publication/">刊行物・公表資料</a></li>
+				<li><a href="http://www.e-gov.go.jp/organization/">組織</a></li>
+				<li><a href="http://www.e-gov.go.jp/announcement/">お知らせ</a></li>
+			</ul>
+		</nav>
 	</div>
-</div>
-<!--=========== /#header ===========-->
+</header>
+<!--=========== /header ===========-->
 
-<!--=========== #gNavi =============-->
-<div id="gNavi" class="clearfix">
-	<ul class="laws">
-		<li><a href="/search/elawsSearch/elaws_search"><img src="/search/elawsSearch/EGOV/images/gnavi_laws_on.gif" width="196" height="30" alt="法令検索"></a></li>
-		<li><a href="http://www.e-gov.go.jp/shinsei/index.html"><img src="/search/elawsSearch/EGOV/images/gnavi_egov.gif" width="196" height="30" alt="電子申請"></a></li>
-		<li><a href="http://shinsei.e-gov.go.jp/search/servlet/Procedure?CLASSNAME=GTAEGOVMSTSEARCH"><img src="/search/elawsSearch/EGOV/images/gnavi_procedure.gif" width="196" height="30" alt="行政手続案内検索"></a></li>
-		<li><a href="http://search.e-gov.go.jp/servlet/Public"><img src="/search/elawsSearch/EGOV/images/gnavi_public.gif" width="196" height="30" alt="パブリックコメント"></a></li>
-		<li><a href="http://www.e-gov.go.jp/faq/index.html"><img src="/search/elawsSearch/EGOV/images/gnavi_faq.gif" width="196" height="30" alt="よくあるご質問"></a></li>
-	</ul>
-</div>
-<!--=========== /#gNavi ============-->
 <!--=========== #contents ======-->
 <a name="cntBlock" id="cntBlock" title="ここから本文です"><!-- content of page --></a>
-<body onload="obj=document.getElementById('info').style; wx=window.parent.screen.width; obj.display='none'; document.getElementById('infotab').style.display='block';document.getElementById('updatelawstag').style.display='none';document.getElementById('td_update').style.borderLeft='0px';">
 	<div id="wrapper" style="display:none">
 		<div id="contents" style="width: 980px;text-align: center;">
 			<!-- ここまで -->
@@ -415,7 +429,6 @@ $(function() {
 			</div>
 		</div>
 	</div>
-</body>
 <!--- 情報ＨＴＭＬ(END) --->
 <!--- 情報ＨＴＭＬ(END) --->
 <!--=========== /#contents ================-->
@@ -445,10 +458,13 @@ $(function() {
         <td>
           <table>
             <tr>
-              <td valign="top">
+              <td valign="top" style="width:150px;">
+                <a href="http://www.e-gov.go.jp/"><img src="/search/elawsSearch/EGOV/images/head_logo.jpg" alt="電子政府の総合窓口 e-Gov[イーガブ]"></a>
+              </td>
+              <td valign="top" style="vertical-align:bottom;">
                 <input type="button" name="button" class="btn btn_cond" value="条件指定画面へ"value="条件指定画面へ">
               </td>
-              <td valign="top">
+              <td valign="top" style="vertical-align:bottom;">
               	
                   &nbsp;<input type="button" name="button" class="btn btn_search" value="検索結果一覧へ" value="検索結果一覧へ">
                 
@@ -460,7 +476,8 @@ $(function() {
           <table>
           <tr>
           	  <td  align="right" colspan="1">
-			  	  <span><a href="425AC0000000098_20150801_000000000000000" target="_blank" class="link_viewContents click_cancel" ><img src="/search/elawsSearch/EGOV/images/contents.png" border="0" alt="別画面で表示"></a></span>&nbsp;&nbsp;&nbsp;
+			  	  <span><a href="425AC0000000098_20150801_000000000000000" target="_blank" class="link_viewContents click_cancel" ><img src="/search/elawsSearch/EGOV/images/contents.png" border="0" alt="別画面で表示"></a></span>
+			      &nbsp;&nbsp;&nbsp;
 			      <span><a href="425AC0000000098_20150801_000000000000000" class="link_fileLink click_cancel" ><img src="/search/elawsSearch/EGOV/images/xml.png" border="0" alt="XML形式ダウンロード"></a></span>
 			      &nbsp;&nbsp;&nbsp;
 		  	  </td>
@@ -471,11 +488,16 @@ $(function() {
 	            <a href="http://hourei.ndl.go.jp/SearchSys/viewEnkaku.do?i=r3RfZNhoKk8grrWWy%2Fhlmw%3D%3D" target="_blank">
 	              <img src="/search/elawsSearch/EGOV/images/banner_hourei.gif" border="0" alt="日本法令索引"></a>
 	          	</span>
+	          	&nbsp;&nbsp;&nbsp;
 	          </td>
 	          
+          	  <td  align="right" colspan="1">
+			  	  <span><a href="http://www.e-gov.go.jp/contact/">お問合せ</a></span>
+			  	  &nbsp;&nbsp;&nbsp;
+		  	  </td>
 	      </tr>
 	      <tr>
-      	       <td align="right"  valign="top"  colspan="2">
+      	       <td align="right"  valign="top"  colspan="3">
 	           このページへのリンク：<input type="text" name="thisLink" id="thisLink" style="width:200px;" value="">
 	           </td>
 	      </tr>
@@ -5448,7 +5470,7 @@ $(function() {
     </div>
   </div>
 <div>
-<input type="hidden" name="_csrf" value="8a41bfbc-3346-487c-954a-c8a72f0696e5" />
+<input type="hidden" name="_csrf" value="1d6e2b40-1d11-4d48-a9dd-70b503bf7845" />
 </div></form>
 
 
@@ -5466,6 +5488,26 @@ $(function() {
 
 
 
+
+
+
+<!--=========== Footer ===========-->
+<div class="pageTop">
+	<a href="#">
+		<img src="/search/elawsSearch/EGOV/images/icon-pagetop.png" alt="このページの先頭へ" width="90" height="50">
+	</a>
+</div>
+
+<footer>
+	<ul class="footerMenu">
+		<li><a href="http://www.e-gov.go.jp/about/">e-Govについて</a></li>
+		<li><a href="http://www.e-gov.go.jp/about/copyright.html">利用条件</a></li>
+		<li><a href="http://www.e-gov.go.jp/privacy_policy.html">個人情報の取扱について</a></li>
+		<li><a href="http://www.e-gov.go.jp/about_ssl.html">安全な通信(SSL/TLS)について</a></li>
+	</ul>
+	<small>Copyright &copy; Ministry of Internal Affairs and Communications All Rights Reserved.</small>
+</footer>
+<!--=========== /Footer ===========-->
 
 		</div>
 	</div>
